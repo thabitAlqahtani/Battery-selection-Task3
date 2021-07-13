@@ -1,2 +1,8 @@
-# Battery-selection-Task3
-In this task, the aim is to find the most suitable battery for the base.
+Introduction: 
+In this task, the aim is to find the most suitable battery for the base of the robot (economically and in terms of operating voltage and current). That is beside designing the circuit that recharge this battery.
+
+Part1(Selecting the battery): 
+firstly, I collected the data of the current consumption and voltage for every component of the base as can be seen in the table in the above file, then, for the voltage we take the highest voltage, which is 12V, for the current consumption of the whole circuit, summing up all the current data which happens to be 515mA as in the table. Now, using the equation in the file, we can select the most suitable battery. If we want to use the robot for 4 hours before recharging, so, multiplying these 4 hours with 515 mA will give 2060mAh. Therefore, the most suitable battery in this case must be: 12V, 2000mAh. In the file named “battery selection-example”, there is an example of a battery that has the same data.
+
+Part2(Designing the charger): 
+In the following link, we can find a circuit that is used to recharge the 12V battery (it is shown in the file named “battery-recharger”) https://www.eleccircuit.com/gel-cell-battery-charger-circuit/  In this circuit we use a voltage regulator which is used to regulate the input voltage from the plug. It has 3 resistors, the value of resistor R3 decides the current input to the battery, in our case we need nearly 500 Ma, so R3 = 1 ohm. We also use a potentiometer. We need a led and a transistor to stop the battery when it is fully charged, and the LED used to indicate that. We also used 2 capacitors both of 0.1 uF.
